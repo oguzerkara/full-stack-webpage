@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+@font-face {
+    font-family: 'OratorStdMedium';
+    src: url('/mit_ss24/public/fonts/OratorStdMedium.ttf') format('ttf');
+    font-display: swap;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define color variables */
+:root {
+  --thd-blau: #1a4273;
+  --donau-blau: #009fe3;
+  --dark-grey: #313131;
+  --light-grey: #434343;
+  --schema-bg: rgba(255, 255, 255, 0.9);
+  --schema-color: var(--dark-grey);
+}
+
+
+
+
+html, body {
+    font-family: 'Saira', sans-serif;
+    color: #333333;
+    padding: 1rem;
+    line-height: 1.428571429;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'OratorStdMedium';
+}
+
+h2 {
+    font-size: 28pt;
+}
+
+.tile {
+    font-family: 'Saira', sans-serif;
+    font-size: 28px;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333; /* darkgrey */
+}
+.hidden-logo {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+/* Additional global styles */
+
+@layer components {
+    .nav-link {
+        @apply relative font-semibold text-white cursor-pointer w-fit after:block after:content-[''] after:absolute after:h-[3px] after:bg-thd-blau after:w-full after:scale-x-0 hover:text-thd-blau after:hover:scale-100 after:transition after:duration-300 after:origin-center hidden md:inline-block;
+    }
+    .nav-link-mobile {
+        @apply relative mb-[2rem] font-semibold text-white cursor-pointer w-fit after:block after:content-[''] after:absolute after:h-[3px] after:bg-donau-blau after:w-full after:scale-x-0 hover:text-donau-blau after:hover:scale-100 after:transition after:duration-300 after:origin-center;
+    }
+
+}

@@ -1,0 +1,33 @@
+{
+  "name": "mit_ss24",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build:tailwind": "tsc tailwind.config.ts --outDir ./",
+    "build": "npm run build:tailwind && next build",
+    "dev": "next dev",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "bcryptjs": "^2.4.3",
+    "next": "14.2.3",
+    "pino": "^9.1.0",
+    "pino-pretty": "^11.0.0",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5",
+    "webpack": "^5.92.1"
+  }
+}
