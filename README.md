@@ -4,8 +4,6 @@
 ### Objective
 This project will be about learning NextJS, React, Timescript, MongoDB and other technologies while completing a full-stack web page. <br>
 
-This project is a part of the Modern Internet Technologies lecture by Prof. Dr.-Ing Udo Garmann.<br>
-
 This Readme file consists of all the information, including wiki information and many detailed implementation steps and challenges. <br>
 
 ### Result
