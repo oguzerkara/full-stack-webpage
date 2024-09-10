@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Project Description
 
-First, run the development server:
+### Objective
+This project will be about learning NextJS, React, Timescript, MongoDB and other technologies while completing a full-stack web page. <br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project is a part of the Modern Internet Technologies lecture by Prof. Dr.-Ing Udo Garmann.<br>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This Readme file consists of all the information, including wiki information and many detailed implementation steps and challenges. <br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Result
+  The project consists of all the features as requested. There is only pino or pino-pretty logger is missing. The reason is there became a webpack error when pino logger is used. Therefore, pino logger will be added as a future work. 
+  The project consist of:
+    - TH Deggendorf corporate identity
+    - Responsive design and responsive navbar
+    - Guest / User / Admin functions as requested. 
+    - User : events page access
+    - Admin : change & delete content at news[id[ page
+    - Content for EN and DE
+    - React components for front end
+    - NextJS App Router for backend
+    - console.log information for terminal
+  
+  Pages:
+    - (Events)
+    - Home
+    - News
+    - Error
+    - Profile
+    - Placeholder Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Prerequisites
 
-## Learn More
+Node version: 20.10.0
+"dependencies": {<br/>
+  "next": "14.2.3",<br/>
+  "react": "^18",<br/>
+  "react-dom": "^18"<br/>
+  },  <br/>
+"devDependencies": { <br/>
+  "tailwindcss": "^3.4.3",<br/>
+  "typescript": "^5"<br/>
+},
 
-To learn more about Next.js, take a look at the following resources:
+## Packages & Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm is used as package manages. Except pino-logger or pino-pretty, all the required frameworks and, dependencies , libraries (NextJS 14 (backend and front-end), Typescript, React (front-end), Tailwind, MongoDB Atlas & Compass, mongoose) are used as requested. All versions are up to date as of 07.2024. next-int used for internalisatoin. heroicons and react-icons are downloaded. In addition Orator style is added to public/fonts folder as it could not be found on the web. bcryptjs downloaded and used to make the app more secure. TOKEN_SECRET is used to tokenise user information and transfer username or isAdmin values securely. Cookies are used to store and transfer the tokenised information as "token". In addition, middleware is used for loaclisation and user area separation. Middleware and is used to prevent a non user to see Profile Page. Middleware is leveraged by user cookies to prevent a user to see the login or register page. Images are stored in local storage in public folder. <br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+tailwind.config.ts is used for describing styles. globals.css is used to apply them globally. <br>
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+i18n.ts together with [locale] is used to apply internalisation properly in root folder. The authentication and internalisation are supported via middleware. <br>
+Models are defined under models folder. <br>
+helpers folder consists of helper functions for client side rendering. Generally, they prevent the client side file to use server side operations.<br>
+dbConfig folder is used for building connection with database via mongoose.<br>
+Components for client side rendering are sorted components folder.<br>
+api folder consists of the server side connections and data management.<br>
+(auth) folder resambles for authentication implementations like login, register. The profile page can be found under (...)(with-auth) folder. This folder aims to access to the same level as root level to increase user experience slightly for the future implementations. There locates events and profile pages to limit the access to these pages. <br>
+There are also error, loading and not found pages at the root level for such incidences. 
