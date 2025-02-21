@@ -54,3 +54,20 @@ Components for client side rendering are sorted components folder.<br>
 api folder consists of the server side connections and data management.<br>
 (auth) folder resambles for authentication implementations like login, register. The profile page can be found under (...)(with-auth) folder. This folder aims to access to the same level as root level to increase user experience slightly for the future implementations. There locates events and profile pages to limit the access to these pages. <br>
 There are also error, loading and not found pages at the root level for such incidences. 
+
+
+## Images from the web-page
+### Language support for News (in English and German)
+![image](https://github.com/user-attachments/assets/8280a8d1-353b-4fab-a145-7a7f91602fdf)
+![image](https://github.com/user-attachments/assets/bfa03dd4-3db3-4ced-a3d6-1e82a59c154e)
+### Updating the Information
+![image](https://github.com/user-attachments/assets/f011496a-b933-418b-b7b7-104f66d4ebd5)
+
+![image](https://github.com/user-attachments/assets/de9b2720-bdaa-4eaa-81cf-9a6be620f251)
+![image](https://github.com/user-attachments/assets/b1fa7cba-ce4f-4595-bd53-daa98d79afbc)
+![image](https://github.com/user-attachments/assets/07dff6b4-32ea-4edd-bff8-a2b711cf83a4)
+
+
+
+
+
