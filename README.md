@@ -59,7 +59,6 @@ There are also error, loading and not found pages at the root level for such inc
 ## Images from the web-page
 ### Language support for News (in English and German)
 ![image](https://github.com/user-attachments/assets/8280a8d1-353b-4fab-a145-7a7f91602fdf)
-![image](https://github.com/user-attachments/assets/bfa03dd4-3db3-4ced-a3d6-1e82a59c154e)
 <img width="1440" alt="Screenshot 2024-07-04 at 01 59 31" src="https://github.com/user-attachments/assets/5114ea7c-4682-40d5-b038-5ffa4b744397" />
 
 ### Updating the Information
