@@ -27,8 +27,8 @@ api folder consists of the server side connections and data management.<br>
 There are also error, loading and not found pages at the root level for such incidences. 
 
 .env file:<br>
-MONGO_URI=mongodb+srv://atamerkara:mit-ss24@cluster0.or1s6.mongodb.net/<dbname>
-TOKEN_SECRET=mit_ss24
+MONGO_URI=mongodb+srv://**id**:**id**@cluster0.or1s6.mongodb.net/<dbname>
+TOKEN_SECRET=__tokenSecret__
 DOMAIN=http://localhost:3000
 NODE_OPTIONS=--max_old_space_size=4096
 
