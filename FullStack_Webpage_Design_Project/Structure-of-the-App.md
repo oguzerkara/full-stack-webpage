@@ -1,0 +1,1 @@
+![Screenshot_2024-07-04_at_14.53.24](uploads/05558881349cad2b92b39acf8b6313f1/Screenshot_2024-07-04_at_14.53.24.png)

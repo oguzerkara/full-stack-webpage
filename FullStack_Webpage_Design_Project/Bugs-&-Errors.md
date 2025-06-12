@@ -1,0 +1,6 @@
+
+<br>
+**Events link on NavBar** does not directly appear when logged in. The reason is it is at the header section and it should be receive the userActive informaiton form cookiess. It would take additional time. It would be corrected in the future updates.<br>
+Again for the **events/[id] sub pages**, there is an error with loading the content properly due to internalisation. It is possible there is a content or id missmatch
+ between the route.js and mongodb events database colleciton. findById or findOne funcitons are used with both values of id from page, and ObjectId from the specific id of the content. There is a misplacement or error due to the custom hard-coded content in the mongodb integret/events databse collection. And, when the _id becomess undefined when tried to fetched. **Still** the News page is almost identical to Events page and can be considered as a simialra implementation.<br>
+**Image error**: There is a recent error appeared after a webpack error in **build**. Therefore, next.config.js is tried to be configured. However, the most possible reason is middleware configuration. Or, in short, images are stored locally so there is (en|de) mismatch.<br>
